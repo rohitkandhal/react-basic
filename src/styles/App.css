@@ -7,12 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,10 +22,35 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* align-items: vertically align items. flex-start | flex-end | center | stretch */
+/* align-content: How to distribute extra space between items .flex-start | flex-end | center | stretch */
+/* justify-content - horizontally align items left, right or center */
+
+/* .commentsContainer {
+  display: flex;
+  align-items: center;
+
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+.commentsContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  animation: myRotate 2s infinite;
+}
+
+@keyframes myRotate {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

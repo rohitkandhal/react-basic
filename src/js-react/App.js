@@ -1,6 +1,6 @@
 // In order to reuse component, we need another wrapping component to hold multiple instances of one component.
 import '../styles/App.css';
-import React5UncontrolledComponent from './React5UncontrolledComponent';
+import { React6CommentList } from './React6FormsWithApiRequest';
 
 export default function App() {
   return (
@@ -15,7 +15,9 @@ export default function App() {
 
       {/* <React4Forms /> */}
 
-      <React5UncontrolledComponent />
+      {/* <React5UncontrolledComponent /> */}
+
+      <React6CommentList />
     </div>
   )
 }

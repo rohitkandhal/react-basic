@@ -1,6 +1,6 @@
 // In order to reuse component, we need another wrapping component to hold multiple instances of one component.
 import '../styles/App.css';
-import { React6CommentList } from './React6FormsWithApiRequest';
+import { React11WithContext } from './React11WithContextHook';
 
 export default function App() {
   return (
@@ -17,7 +17,18 @@ export default function App() {
 
       {/* <React5UncontrolledComponent /> */}
 
-      <React6CommentList />
+      {/* <React6CommentList /> */}
+
+      {/* <React7RenderProps /> */}
+
+      {/* <React8HigherOrderFunction /> */}
+
+      {/* <React9CommentList />
+      <React9AnotherCommentList /> */}
+
+      {/* <React10WithoutContext /> */}
+
+      <React11WithContext />
     </div>
   )
 }

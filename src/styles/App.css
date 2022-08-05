@@ -25,16 +25,6 @@
 /* align-items: vertically align items. flex-start | flex-end | center | stretch */
 /* align-content: How to distribute extra space between items .flex-start | flex-end | center | stretch */
 /* justify-content - horizontally align items left, right or center */
-
-/* .commentsContainer {
-  display: flex;
-  align-items: center;
-
-  align-content: center;
-  justify-content: center;
-  height: 100vh;
-} */
-
 .commentsContainer {
   height: 100vh;
   display: flex;
@@ -53,5 +43,23 @@
 
   to {
     transform: rotate(360deg);
+  }
+}
+.anotherLoader {
+  position: absolute;
+  animation: linear moveLeftRight 1s infinite;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%
+  }
+
+  100% {
+    left: 0;
   }
 }

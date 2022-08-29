@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Initialize counter for heading */
+#page {
+  counter-reset: c1 10 s1;
+  /* initialize counter with value */
+}
+
+h1::before {
+  counter-increment: c1;
+  content: "** " counter(c1) " ** ";
+}
+
+/* Reset section counters */
+h1 {
+  counter-reset: s1;
+}
+
+h2::before {
+  counter-increment: s1;
+  content: counters(c1, ".") "." counter(s1);
+}

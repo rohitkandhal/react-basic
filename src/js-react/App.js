@@ -1,4 +1,5 @@
 // In order to reuse component, we need another wrapping component to hold multiple instances of one component.
+import LoadQuizes from '../react-misc/0LoadQuiz';
 import '../styles/App.css';
 import { React11WithContext } from './React11WithContextHook';
 
@@ -28,7 +29,9 @@ export default function App() {
 
       {/* <React10WithoutContext /> */}
 
-      <React11WithContext />
+      {/* <React11WithContext /> */}
+
+      <LoadQuizes />
     </div>
   )
 }

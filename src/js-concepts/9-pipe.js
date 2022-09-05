@@ -5,15 +5,6 @@ const plus = (y) => (x) => x + y
 const subtract = (y) => (x) => x - y
 const divide = (y) => (x) => x / y
 
-function pipeForOneFunction(funcs) {
-  return function (arg) {
-    return funcs(arg)
-  }
-}
-const multiple = pipeForOneFunction(
-  times(2)
-)
-
 function pipe(funcs) {
   return function (arg) {
     return funcs.reduce((accumulator, currFun) => {

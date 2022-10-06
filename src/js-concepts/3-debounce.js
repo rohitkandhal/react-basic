@@ -1,3 +1,5 @@
+// https://web.archive.org/web/20180324022838/http://demo.nimius.net/debounce_throttle/
+
 function debounce(callback, wait) {
   let timer;
   return function (...args) {

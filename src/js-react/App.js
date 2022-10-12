@@ -1,4 +1,5 @@
 // In order to reuse component, we need another wrapping component to hold multiple instances of one component.
+import LoadQuizes from '../react-misc/0LoadQuiz';
 import '../styles/App.css';
 import GithubRepoList from './React16GitRepoList-App';
 
@@ -31,6 +32,8 @@ export default function App() {
       {/* <React11WithContext /> */}
 
       {<GithubRepoList />}
+      
+      {/* <LoadQuizes /> */}
     </div>
   )
 }

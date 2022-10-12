@@ -1,4 +1,7 @@
 // Throttle allows you to execute the function only once in a given time interval.
+// In practice:
+// For example, we need to handle the scrolling of the page and execute some fn function that works with the coordinates of the scroll. We can subscribe directly to the onscroll event, but it will be called very often (depending on how fast we scroll), but even if we do it quickly, events will be more than 1–2. You can decorate the executed function in throttle and execute it once every N ms.
+// https://web.archive.org/web/20180324022838/http://demo.nimius.net/debounce_throttle/
 
 function throttle(callback, wait) {
   let isWaiting = false, lastArgs = null;
@@ -72,5 +75,3 @@ function advancedThrottle(callback, wait, config = { leading: true, trailing: tr
   }
 }
 
-// In practice:
-// For example, we need to handle the scrolling of the page and execute some fn function that works with the coordinates of the scroll. We can subscribe directly to the onscroll event, but it will be called very often (depending on how fast we scroll), but even if we do it quickly, events will be more than 1–2. You can decorate the executed function in throttle and execute it once every N ms.

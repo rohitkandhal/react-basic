@@ -1,13 +1,13 @@
 // force a function to be called only once, later calls only returns the result of first call.
 
 function once(callback) {
-  let memo = undefined, hasEvaluated = false;
+  let result = undefined, isCalled = false;
   return function onced(...args) {
-    if (hasEvaluated === false) {
-      memo = callback.apply(this, args);
-      hasEvaluated = true
+    if (isCalled === false) {
+      result = callback.apply(this, args);
+      isCalled = true
     }
-    return memo;
+    return result;
   }
 }
 

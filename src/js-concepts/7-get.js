@@ -1,4 +1,4 @@
-// s a handy method to help retrieving data from an arbitrary object. if the resolved value from path is undefined, defaultValue is returned.
+// a handy method to help retrieving data from an arbitrary object. if the resolved value from path is undefined, defaultValue is returned.
 
 const obj = {
   a: {

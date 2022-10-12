@@ -1,0 +1,29 @@
+.github-app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.github-repo-table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+/* Center align table */
+.github-repo-table {
+  margin: 0 auto;
+}
+
+button {
+  margin: 10px;
+}
+
+.info {
+  color: rebeccapurple;
+}
+
+.error {
+  color: red
+}

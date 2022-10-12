@@ -1,6 +1,6 @@
 // In order to reuse component, we need another wrapping component to hold multiple instances of one component.
 import '../styles/App.css';
-import { React11WithContext } from './React11WithContextHook';
+import GithubRepoList from './React16GitRepoList-App';
 
 export default function App() {
   return (
@@ -28,7 +28,9 @@ export default function App() {
 
       {/* <React10WithoutContext /> */}
 
-      <React11WithContext />
+      {/* <React11WithContext /> */}
+
+      {<GithubRepoList />}
     </div>
   )
 }
